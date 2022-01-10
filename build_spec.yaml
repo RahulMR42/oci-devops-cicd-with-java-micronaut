@@ -28,11 +28,13 @@ steps:
 
   - type: Command
     timeoutInSeconds: 600
-    name: "Build the app"
+    name: "Build the java app"
     command: |
       cd ${OCI_WORKSPACE_DIR}/${code_repo_name}
-      ./gradlew run  -v
+      ./gradlew build
       ls -ltr 
+      docker images
+      
     onFailure:
       - type: Command
         command: |
