@@ -31,7 +31,7 @@ steps:
     name: "Build the app"
     command: |
       cd ${OCI_WORKSPACE_DIR}/${code_repo_name}
-      ./gradlew build
+      ./gradlew build -v
       ls -ltr 
     onFailure:
       - type: Command
