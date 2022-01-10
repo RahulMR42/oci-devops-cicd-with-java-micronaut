@@ -11,6 +11,6 @@ public class HelloWorldController {
     @Get
     @Produces(MediaType.TEXT_PLAIN)
     public String index() {
-        return "Hello World using micronaut";
+        return "Hello From Java Micronaut Application";
     }
 }

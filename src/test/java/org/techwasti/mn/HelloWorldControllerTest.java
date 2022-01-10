@@ -24,6 +24,6 @@ public class HelloWorldControllerTest {
         String body = client.toBlocking().retrieve(request);
 
         assertNotNull(body);
-        assertEquals("Hello World using micronaut", body);
+        assertEquals("Hello From Java Micronaut Application", body);
     }
 }
