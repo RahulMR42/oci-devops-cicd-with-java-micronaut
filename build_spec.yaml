@@ -32,9 +32,8 @@ steps:
     command: |
       cd ${OCI_WORKSPACE_DIR}/${code_repo_name}
       ./gradlew build
-      ls -ltr 
-      docker images
-      
+      ./gradlew test  
+
     onFailure:
       - type: Command
         command: |
